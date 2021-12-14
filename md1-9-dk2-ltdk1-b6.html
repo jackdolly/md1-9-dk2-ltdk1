@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</title>
+</head>
+<body>
+<script>
+    let doanhso = +prompt("nhập doanh số bán hàng");
+    let hoahong = 0;
+    if(doanhso <= 100){
+        hoahong = doanhso *5/100
+        alert("hoahong bạn nhận được là:" + hoahong)
+    } else if (doanhso <= 200){
+        hoahong = 100*5/100 + (doanhso-100)*10/100
+        alert("hoa hồng bạn nhận được là:" + hoahong)
+    } else {
+        hoahong = 100*5/100 + 100*10/100 +(doanhso-200)*20/100
+        alert("hoa hồng bạn nhận được là:" + hoahong)
+    }
+</script>
+</body>
+</html>

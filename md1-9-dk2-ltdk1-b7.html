@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại cho một hộ gia đình với các thông số đã cho.
+        Phí thuê bao bắt buộc là 25 nghìn.
+        600 đồng cho mỗi gọi của 50 phút đầu tiên.
+        400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+    </title>
+</head>
+<body>
+<script>
+    let sophut = +prompt("nhập số phút đã sử dụng");
+    let cuocdienthoai = 0;
+    if(sophut <= 50){
+        cuocdienthoai = sophut*25000
+        alert("cước điện thoại là:" + cuocdienthoai)
+    } else if (sophut <= 150){
+        cuocdienthoai = sophut*25000 + sophut*600
+        alert("cước điện thoại là:" + cuocdienthoai)
+    } else {
+        cuocdienthoai = sophut*25000 + sophut*400
+        alert("cước điện thoại là:" + cuocdienthoai)
+    }
+</script>
+</body>
+</html>
